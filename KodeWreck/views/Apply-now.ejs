@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+<div class="container my-5 text-light">
+    <h1 class="display-5 text-center mb-5">Join KodeWreck</h1>
+
+    <!-- Form for KIIT email, Name, CF & CC profile links -->
+    <form id="joinForm" action="/submit-form" method="POST">
+        
+        <!-- KIIT Email -->
+        <div class="mb-4">
+            <label for="kiitEmail" class="form-label">KIIT Email ID</label>
+            <input type="email" class="form-control bg-transparent text-light border-light" id="kiitEmail" name="kiit-email" required placeholder="your_roll_no@kiit.ac.in">
+        </div>
+
+        <!-- Full Name -->
+        <div class="mb-4">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control bg-transparent text-light border-light" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <!-- Codeforces Profile Link -->
+        <div class="mb-4">
+            <label for="cfProfile" class="form-label">Codeforces Profile Link</label>
+            <input type="url" class="form-control bg-transparent text-light border-light" id="cfProfile" name="cf-profile" required placeholder="https://codeforces.com/profile/yourprofile">
+        </div>
+
+        <!-- Codechef Profile Link -->
+        <div class="mb-4">
+            <label for="ccProfile" class="form-label">Codechef Profile Link</label>
+            <input type="url" class="form-control bg-transparent text-light border-light" id="ccProfile" name="cc-profile" required placeholder="https://www.codechef.com/users/yourprofile">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-outline-light">Submit Application</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

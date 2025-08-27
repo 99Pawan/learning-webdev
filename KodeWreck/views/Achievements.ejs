@@ -1,0 +1,152 @@
+<%-include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+<main class="container">
+    <!-- Section Title -->
+    <h1 class="front-dialogue mb-5 mt-5">Achievements & Legacy</h1>
+  
+    <!-- Notable Alumni Section -->
+    <section class="mb-5">
+      <h2 class="fw-bold">Notable Alumni</h2>
+      <p>Our alumni have made remarkable strides in the tech industry and beyond. Here are some of our esteemed alumni who have taken the skills learned at KodeWreck to new heights:</p>
+      
+      <!-- Carousel Wrapper -->
+      <div id="alumniCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 (with 3 cards) -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <!-- Card 1 -->
+              <div class="col-md-4">
+                <div class="card text-center bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 100px; height: 100px; background-color: #ddd; background-image: url('https://via.placeholder.com/100'); background-size: cover;"></div>
+                    <h5 class="card-title text-light">Alumni 1</h5>
+                    <p class="card-subtitle mb-2 text-muted">Class of 2015 - Software Engineer at Google</p>
+                    <p class="card-text text-light">Contributions in technology.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-4">
+                <div class="card text-center bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 100px; height: 100px; background-color: #ddd; background-image: url('https://via.placeholder.com/100'); background-size: cover;"></div>
+                    <h5 class="card-title text-light">Alumni 2</h5>
+                    <p class="card-subtitle mb-2 text-muted">Class of 2018 - Product Manager at Amazon</p>
+                    <p class="card-text text-light">Impact in product development.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-4">
+                <div class="card text-center bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 100px; height: 100px; background-color: #ddd; background-image: url('https://via.placeholder.com/100'); background-size: cover;"></div>
+                    <h5 class="card-title text-light">Alumni 3</h5>
+                    <p class="card-subtitle mb-2 text-muted">Class of 2020 - Research Scientist at MIT</p>
+                    <p class="card-text text-light">Research in AI and ML.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 (with 3 cards) -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <!-- Card 4 -->
+              <div class="col-md-4">
+                <div class="card text-center bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 100px; height: 100px; background-color: #ddd; background-image: url('https://via.placeholder.com/100'); background-size: cover;"></div>
+                    <h5 class="card-title text-light">Alumni 4</h5>
+                    <p class="card-subtitle mb-2 text-muted">Class of 2016 - Data Scientist at IBM</p>
+                    <p class="card-text text-light">Innovation in data analytics.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-md-4">
+                <div class="card text-center bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 100px; height: 100px; background-color: #ddd; background-image: url('https://via.placeholder.com/100'); background-size: cover;"></div>
+                    <h5 class="card-title text-light">Alumni 5</h5>
+                    <p class="card-subtitle mb-2 text-muted">Class of 2019 - CTO at StartupX</p>
+                    <p class="card-text text-light">Leading innovations in tech.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-md-4">
+                <div class="card text-center bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 100px; height: 100px; background-color: #ddd; background-image: url('https://via.placeholder.com/100'); background-size: cover;"></div>
+                    <h5 class="card-title text-light">Alumni 6</h5>
+                    <p class="card-subtitle mb-2 text-muted">Class of 2021 - AI Engineer at OpenAI</p>
+                    <p class="card-text text-light">Pioneering AI research.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev round-corners" type="button" data-bs-target="#alumniCarousel" data-bs-slide="prev" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next round-corners" type="button" data-bs-target="#alumniCarousel" data-bs-slide="next" style="background: linear-gradient(to left, rgba(255, 255, 255, 0.5), transparent);">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+  
+    <!-- Distinguished Achievements Section -->
+    <section class="mb-5">
+      <h2 class="fw-bold">Distinguished Achievements of Our Members</h2>
+      <p>From winning international competitions to creating impact through technology, our members constantly push boundaries. Here are some of their noteworthy achievements:</p>
+      
+      <ul class="list-group">
+        <li class="list-group-item border-light bg-transparent">
+          <strong>Alex Echo:</strong> Placed in the Top 50 in Google’s Code Jam, advancing to multiple rounds and representing our society on the global stage.
+        </li>
+        <li class="list-group-item border-light bg-transparent">
+          <strong>Riley Zeta:</strong> Developed an automated grading system for competitive coding which was adopted by various universities.
+        </li>
+        <li class="list-group-item border-light bg-transparent">
+          <strong>Taylor Gamma:</strong> Successfully published a research paper on optimized algorithms in ACM Transactions on Algorithms.
+        </li>
+      </ul>
+    </section>
+  
+    <!-- Successful Events Section -->
+    <section class="mb-5">
+      <h2 class="fw-bold">Successful Event Highlights</h2>
+      <p>Over the years, KodeWreck has hosted several successful events that inspired and trained upcoming coders.</p>
+      
+      <div class="row">
+        <% const events = [
+          { title: "KodeFest Hackathon", description: "An annual 24-hour hackathon attended by over 300 participants, leading to the creation of 50+ projects in AI, Web Dev, and IoT." },
+          { title: "ICPC Prep Camp", description: "An intensive preparation camp that trained over 100 students, many of whom advanced to the ICPC Regionals." },
+          { title: "Women in Tech Coding Bootcamp", description: "A bootcamp focused on empowering female coders, fostering an inclusive coding culture with hands-on sessions." }
+        ]; %>
+        
+        <% events.forEach(event => { %>
+          <div class="col-md-6 mb-4">
+            <div class="card text-center border-light bg-transparent">
+              <h4><%= event.title %></h4>
+              <p><%= event.description %></p>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </section>
+  </main>
+
+
+  <%- include("partials/footer.ejs") %>
+  

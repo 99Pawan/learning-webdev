@@ -1,0 +1,25 @@
+<%-include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+<div class="container my-5 text-light">
+    <h1 class="display-5 text-center mb-5">Write Your Own Blog</h1>
+
+    <!-- Blog Submission Form -->
+    <form id="blogForm" action="/submit-blog" method="POST">
+        <!-- Blog Title -->
+        <div class="mb-4">
+            <label for="blogTitle" class="form-label">Blog Title</label>
+            <input type="text" class="form-control bg-transparent text-light border-light" id="blogTitle" name="title" required>
+        </div>
+
+        <!-- Blog Content with LaTeX Support -->
+        <div class="mb-4">
+            <label for="blogContent" class="form-label">Blog Content</label>
+            <textarea class="form-control bg-transparent text-light border-light" id="blogContent" name="content" rows="15" required placeholder="Type your blog here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-outline-light">Submit Blog</button>
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>

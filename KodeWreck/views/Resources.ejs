@@ -1,0 +1,388 @@
+<%-include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+<div class = "container">
+    <h2 class="text-center mt-5 mb-5 front-dialogue">Must-Know DSA & CP-Learning Websites</h2>
+
+    <!-- Carousel with Smaller Cards -->
+    <div id="resourceCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <!-- Carousel Slide 1 -->
+        <div class="carousel-item active mt-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/cp-algo.png" class="card-img-top mt-3" alt="CP-Algorithms">
+                <div class="card-body">
+                <h5 class="card-title">CP-Algorithms</h5>
+                <p class="card-text">A comprehensive resource for algorithms and data structures in competitive programming.</p>
+                <a href="https://cp-algorithms.com/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/usaco.png" class="card-img-top mt-3" alt="USACO Guide">
+                <div class="card-body">
+                <h5 class="card-title">USACO Guide</h5>
+                <p class="card-text">A guide for learning DSA and preparing for USACO and other CP competitions.</p>
+                <a href="https://usaco.guide/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/gfg.png" class="card-img-top mt-3" alt="GeeksforGeeks">
+                <div class="card-body">
+                <h5 class="card-title">GeeksforGeeks</h5>
+                <p class="card-text">Platform for DSA topics, coding problems, and interview prep resources.</p>
+                <a href="https://www.geeksforgeeks.org/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Carousel Slide 2 -->
+        <div class="carousel-item mt-4">
+        <div class="row">
+            <!-- Card 4 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/codeforces.png" class="card-img-top mt-3" alt="CodeForces EDU">
+                <div class="card-body">
+                <h5 class="card-title">CodeForces EDU</h5>
+                <p class="card-text">Educational resources for improving competitive programming skills.</p>
+                <a href="https://codeforces.com/edu/courses" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/top-coder.png" class="card-img-top mt-3" alt="TopCoder Tutorials">
+                <div class="card-body">
+                <h5 class="card-title">TopCoder Tutorials</h5>
+                <p class="card-text">Extensive tutorials and articles on algorithms and competitive programming.</p>
+                <a href="https://www.topcoder.com/community/competitive-programming/tutorials" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/leetcode.png" class="card-img-top carousel-card-img mt-3" alt="LeetCode Explore">
+                <div class="card-body">
+                <h5 class="card-title">LeetCode Explore</h5>
+                <p class="card-text">Series of guided paths to master coding skills and algorithms.</p>
+                <a href="https://leetcode.com/explore/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Carousel Slide 3 -->
+        <div class="carousel-item mt-4">
+        <div class="row">
+            <!-- Card 7 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/hackerrank.jpg" class="card-img-top mt-3" alt="HackerRank">
+                <div class="card-body">
+                <h5 class="card-title">HackerRank</h5>
+                <p class="card-text">Practice DSA and competitive programming skills through challenges.</p>
+                <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-algorithms" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/tle-eliminators.jpg" class="card-img-top mt-3" alt="A2OJ Ladders">
+                <div class="card-body">
+                <h5 class="card-title">TLE Eliminators</h5>
+                <p class="card-text">A structured way to practice and improve in competitive programming on Codeforces.</p>
+                <a href="https://a2oj.com/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev round-corners" type="button" data-bs-target="#resourceCarousel" data-bs-slide="prev" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next round-corners" type="button" data-bs-target="#resourceCarousel" data-bs-slide="next" style="background: linear-gradient(to left, rgba(255, 255, 255, 0.5), transparent);">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Educational & Helpful Blogs</h2>
+        <div class="blogs-list">
+    
+            <!-- Blog 1 -->
+            <div class="blog-item">
+                <a href="https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/" target="_blank" class="blog-link">
+                    <span>Top 10 Algorithms in Interview Questions</span>
+                    <p class="blog-description">Essential algorithms often tested in interviews.</p>
+                </a>
+            </div>
+    
+            <!-- Blog 2 -->
+            <div class="blog-item">
+                <a href="https://www.codingninjas.com/blog/2022/05/24/10-most-asked-data-structure-interview-questions/" target="_blank" class="blog-link">
+                    <span>10 Most Asked Data Structure Interview Questions</span>
+                    <p class="blog-description">Get familiar with data structure questions for interviews.</p>
+                </a>
+            </div>
+    
+            <!-- Blog 3 -->
+            <div class="blog-item">
+                <a href="https://cp-algorithms.com/" target="_blank" class="blog-link">
+                    <span>Competitive Programming Algorithms</span>
+                    <p class="blog-description">A comprehensive guide to CP algorithms.</p>
+                </a>
+            </div>
+    
+            <!-- Blog 4 -->
+            <div class="blog-item">
+                <a href="https://leetcode.com/explore/" target="_blank" class="blog-link">
+                    <span>LeetCode Explore</span>
+                    <p class="blog-description">Master various coding skills through guided paths.</p>
+                </a>
+            </div>
+    
+            <!-- Blog 5 -->
+            <div class="blog-item">
+                <a href="https://towardsdatascience.com/an-introduction-to-machine-learning-6e45cb8e9c76" target="_blank" class="blog-link">
+                    <span>Introduction to Machine Learning</span>
+                    <p class="blog-description">A beginner-friendly overview of ML fundamentals.</p>
+                </a>
+            </div>
+    
+            <!-- Add more blogs as needed -->
+        </div>
+    </div>
+    
+
+    <!-- top content creators -->
+    <h2 class="text-center mt-5 mb-5 front-dialogue">Top DSA & CP Content Creators</h2>
+
+    <!-- Carousel with Smaller Cards -->
+    <div id="contentCreatorCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <!-- Carousel Slide 1 -->
+        <div class="carousel-item active mt-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/cp-algo.png" class="card-img-top mt-3" alt="CP-Algorithms">
+                <div class="card-body">
+                <h5 class="card-title">CP-Algorithms</h5>
+                <p class="card-text">A comprehensive resource for algorithms and data structures in competitive programming.</p>
+                <a href="https://cp-algorithms.com/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/usaco.png" class="card-img-top mt-3" alt="USACO Guide">
+                <div class="card-body">
+                <h5 class="card-title">USACO Guide</h5>
+                <p class="card-text">A guide for learning DSA and preparing for USACO and other CP competitions.</p>
+                <a href="https://usaco.guide/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/gfg.png" class="card-img-top mt-3" alt="GeeksforGeeks">
+                <div class="card-body">
+                <h5 class="card-title">GeeksforGeeks</h5>
+                <p class="card-text">Platform for DSA topics, coding problems, and interview prep resources.</p>
+                <a href="https://www.geeksforgeeks.org/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Carousel Slide 2 -->
+        <div class="carousel-item mt-4">
+        <div class="row">
+            <!-- Card 4 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/codeforces.png" class="card-img-top mt-3" alt="CodeForces EDU">
+                <div class="card-body">
+                <h5 class="card-title">CodeForces EDU</h5>
+                <p class="card-text">Educational resources for improving competitive programming skills.</p>
+                <a href="https://codeforces.com/edu/courses" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/top-coder.png" class="card-img-top mt-3" alt="TopCoder Tutorials">
+                <div class="card-body">
+                <h5 class="card-title">TopCoder Tutorials</h5>
+                <p class="card-text">Extensive tutorials and articles on algorithms and competitive programming.</p>
+                <a href="https://www.topcoder.com/community/competitive-programming/tutorials" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/leetcode.png" class="card-img-top carousel-card-img mt-3" alt="LeetCode Explore">
+                <div class="card-body">
+                <h5 class="card-title">LeetCode Explore</h5>
+                <p class="card-text">Series of guided paths to master coding skills and algorithms.</p>
+                <a href="https://leetcode.com/explore/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Carousel Slide 3 -->
+        <div class="carousel-item mt-4">
+        <div class="row">
+            <!-- Card 7 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/hackerrank.jpg" class="card-img-top mt-3" alt="HackerRank">
+                <div class="card-body">
+                <h5 class="card-title">HackerRank</h5>
+                <p class="card-text">Practice DSA and competitive programming skills through challenges.</p>
+                <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-algorithms" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-4">
+            <div class="card card-center bg-transparent border-light text-center mb-4">
+                <img src="/images/tle-eliminators.jpg" class="card-img-top mt-3" alt="A2OJ Ladders">
+                <div class="card-body">
+                <h5 class="card-title">TLE Eliminators</h5>
+                <p class="card-text">A structured way to practice and improve in competitive programming on Codeforces.</p>
+                <a href="https://a2oj.com/" target="_blank" class="btn btn-outline-light">Visit</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev round-corners" type="button" data-bs-target="#contentCreatorCarousel" data-bs-slide="prev" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next round-corners" type="button" data-bs-target="#contentCreatorCarousel" data-bs-slide="next" style="background: linear-gradient(to left, rgba(255, 255, 255, 0.5), transparent);">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+
+    <!-- Informational Videos Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Informational Videos</h2>
+        <div id="videoThumbnailCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item active mt-4">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://youtu.be/bVKHRtafgPc?si=dvhLrcKWBAXfeSeB" target="_blank">
+                                <img src="https://img.youtube.com/vi/example1/hqdefault.jpg" class="img-fluid" alt="Video 1 Thumbnail">
+                                <h5>Video Title 1</h5>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+                                <img src="https://img.youtube.com/vi/example2/hqdefault.jpg" class="img-fluid" alt="Video 2 Thumbnail">
+                                <h5>Video Title 2</h5>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://www.youtube.com/watch?v=example3" target="_blank">
+                                <img src="https://img.youtube.com/vi/example3/hqdefault.jpg" class="img-fluid" alt="Video 3 Thumbnail">
+                                <h5>Video Title 3</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item mt-4">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://www.youtube.com/watch?v=example4" target="_blank">
+                                <img src="https://img.youtube.com/vi/example4/hqdefault.jpg" class="img-fluid" alt="Video 4 Thumbnail">
+                                <h5>Video Title 4</h5>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://www.youtube.com/watch?v=example5" target="_blank">
+                                <img src="https://img.youtube.com/vi/example5/hqdefault.jpg" class="img-fluid" alt="Video 5 Thumbnail">
+                                <h5>Video Title 5</h5>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://www.youtube.com/watch?v=example6" target="_blank">
+                                <img src="https://img.youtube.com/vi/example6/hqdefault.jpg" class="img-fluid" alt="Video 6 Thumbnail">
+                                <h5>Video Title 6</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more carousel items as needed -->
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev round-corners" type="button" data-bs-target="#videoThumbnailCarousel" data-bs-slide="prev" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next round-corners" type="button" data-bs-target="#videoThumbnailCarousel" data-bs-slide="next" style="background: linear-gradient(to left, rgba(255, 255, 255, 0.5), transparent);">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>

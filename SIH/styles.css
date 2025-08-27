@@ -1,0 +1,53 @@
+.navbar-back {
+    background: linear-gradient(300deg, darkorange, lightgoldenrodyellow, bisque);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.carousel-image {
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images fill the area while maintaining aspect ratio */
+}
+
+.carousel-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.gradient-caption {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    color: white;
+}
+
+.options{
+    margin-top: 30px;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+.card-grid{
+    width : 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap : 20px;
+}
+.footer-img{
+    height : 100px;
+    width : 100px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

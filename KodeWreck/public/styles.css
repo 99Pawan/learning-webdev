@@ -1,0 +1,219 @@
+.navbar-back {
+    background-color: rgb(0, 0, 0);
+    background-size: 180% 180%;
+
+}
+
+
+
+body{
+    padding-top: 50px;
+}
+
+/* .nav-link:hover {
+    background-color: #0a4516;
+    color: #333;
+} */
+
+.footer-logo {
+    height: 200px;
+    width: 400px;
+}
+
+
+.white{
+    color : white;
+}
+
+.nav-link {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}
+
+
+/* Apply font family and bold to h1 and h2 elements */
+h1, h2 {
+    font-family: 'Roboto Mono', monospace; 
+    font-weight: bold; 
+}
+
+/* Other existing styles */
+.front-dialogue {
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+}
+
+/* Your other CSS styles... */
+
+
+
+.why-join-us-list {
+    font-family: 'Roboto Mono';
+    font-size: 1.2em;
+    line-height: 1.6;
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.why-join-us-list li {
+    margin-bottom: 1.2rem;
+}
+
+.carousel-image {
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images fill the area while maintaining aspect ratio */
+}
+
+.carousel-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.gradient-caption {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    color: white;
+}
+
+.options{
+    margin-top: 30px;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+.card-grid{
+    width : 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap : 20px;
+}
+.footer-img{
+    height : 100px;
+    width : 100px;
+}
+
+.round-corners {
+    border-radius: 30px; /* Rounded corners applied directly to the inner container */
+    overflow: hidden; /* Ensures the image respects the rounded corners */
+}
+
+.carousel-item {
+    transition: transform 0.5s ease; /* Apply a smooth transition without Bootstrap's transform effect */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card {
+    max-width: 90vw;
+    margin: auto;
+}
+  
+.card-img-top{
+    border-radius: 50%;
+}
+
+.card-img-top {
+    height: 100px !important;
+    width: 100px !important;
+    object-fit: contain;
+    border-radius: 50%;
+}    
+
+.card-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack image and text vertically */
+}
+
+.carousel {
+    padding: 0 1rem; /* Add space inside */
+}
+  
+.carousel-item {
+   flex: 0 0 auto;
+   width: 100%; /* Prevent overflow */
+}
+  
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Adjust button width for better control over gradient fade */
+}
+
+
+.container h2 {
+    color: #ffffff; /* White color for a clean look */
+    font-size: 2em;
+}
+
+.blogs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-item {
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #555; /* Subtle border to outline each blog item */
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle light background on hover */
+}
+
+.blog-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-link span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.blog-description {
+    font-size: 0.9em;
+    color: #cccccc;
+    margin-top: 0.3rem;
+}
+
+.blog-link:hover span,
+.blog-link:hover .blog-description {
+    color: #ffffff; /* Keep color white on hover */
+}
+
+/* Universal button styling with hover effect */
+.btn, .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover, .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensuring background transparency */
+.card, .btn {
+    background-color: transparent; /* Use bg-transparent if using Bootstrap classes */
+}
+
+
+/* apply now page css  */

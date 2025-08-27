@@ -1,0 +1,33 @@
+/* h2[class = "color-title"]{
+    font-weight: normal;
+} */
+.color-title{
+    font-weight: normal;
+}
+
+
+/* 
+h2[id = "red"]{
+    color: red;
+} */
+
+#red{
+    color: red;
+}
+#blue{
+    color: blue;
+}
+#orange{
+    color: orange;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color: yellow;
+}
+
+img{
+    height : 200px;
+    width : 200px;
+}

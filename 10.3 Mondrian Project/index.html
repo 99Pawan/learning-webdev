@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: 414px 1fr;
+      gap : 9px;
+    }
+    .inside1{
+      display: grid;
+      gap: 9px;
+      grid-template-rows: 1fr 20px;
+    }
+    /* .three{
+      height: 296px;
+      width: 320px;
+    }
+    .four{
+      height: 20px;
+      width: 320px; 
+    } */
+    .inside2{
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 1fr 50px;
+    }
+    .inside2-1{
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 198px 153px;
+      grid-template-rows: 1fr 20px;
+    }
+    .five{
+      grid-column: span 2;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .blue{
+      background-color: #004592;
+    }
+    .eight{
+      margin-bottom: 10px;
+    }
+    .inside2-2{
+      display: grid;
+      gap: 9px;
+      grid-template-rows: 130px 1fr;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class = "container">
+    <div class = "red one"></div>
+    <div class = "white two"></div>
+    <div class = "inside1">
+      <div class = "white three"></div>
+      <div class = "white four"></div>
+    </div>
+    <div class = "inside2">
+      <div class = "inside2-1">
+        <div class = "white five"></div>
+        <div class = "yellow six"></div>
+        <div class = "black seven"></div>
+      </div>
+      <div class = "inside2-2">
+        <div class = "blue eight"></div>
+        <div class = "white nine"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

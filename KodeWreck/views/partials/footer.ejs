@@ -1,0 +1,72 @@
+
+</main>
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top navbar-back">
+    <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src = "./images/KodeWreck-removebg-preview.jpg" height = "200px" width = "400px">
+        </a>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/home" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="/features" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="/pricing" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="/faqs" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="/about" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+    </div>
+
+    <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/team" class="nav-link p-0 text-body-secondary">Our Team</a></li>
+            <li class="nav-item mb-2"><a href="/careers" class="nav-link p-0 text-body-secondary">Careers</a></li>
+            <li class="nav-item mb-2"><a href="/privacy" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="/terms" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+            <li class="nav-item mb-2"><a href="/contact" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+        </ul>
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Particles.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<!-- Initialize Particles.js -->
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+            opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1 } },
+            size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" },
+                resize: true
+            },
+            modes: {
+                repulse: { distance: 100, duration: 0.4 },
+                push: { particles_nb: 4 }
+            }
+        },
+        retina_detect: true
+    });
+</script>
+    
+</body>
+
+</html>

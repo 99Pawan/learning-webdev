@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Form Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+            background: url('./KIITEE-2023-Admission-Page-scaled.jpg') no-repeat center center/cover;
+        }
+
+        iframe {
+            width: 50%;
+            border: none;
+            background-color: transparent; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="left.html"></iframe>
+
+        <iframe src="right.html"></iframe>
+    </div>
+</body>
+</html>

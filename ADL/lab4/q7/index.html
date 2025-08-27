@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add</button>
+    <select id="filter" onchange="filterTasks()">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+    </select>
+    <ul id="taskList"></ul>
+
+    <script>
+        let tasks = [];
+        function addTask() {
+            const taskInput = document.getElementById("taskInput");
+            const taskText = taskInput.value.trim();
+            if (taskText === "") return;
+            tasks.push({ text: taskText, completed: false });
+            taskInput.value = "";
+            renderTasks();
+        }
+
+        function toggleTask(index) {
+            tasks[index].completed = !tasks[index].completed;
+            renderTasks();
+        }
+
+        function deleteTask(index) {
+            tasks.splice(index, 1);
+            renderTasks();
+        }
+
+        function editTask(index) {
+            const newText = prompt("Edit task:", tasks[index].text);
+            if (newText !== null) {
+                tasks[index].text = newText.trim();
+                renderTasks();
+            }
+        }
+
+        function filterTasks() {
+            renderTasks();
+        }
+
+        function renderTasks() {
+            const filter = document.getElementById("filter").value;
+            const taskList = document.getElementById("taskList");
+            taskList.innerHTML = "";
+            tasks.forEach((task, index) => {
+                if (filter === "completed" && !task.completed) return;
+                if (filter === "pending" && task.completed) return;
+                const li = document.createElement("li");
+                li.innerHTML = `<input type="checkbox" ${task.completed ? "checked" : ""} onclick="toggleTask(${index})">
+                               <span ${task.completed ? "style='text-decoration: line-through;'" : ""}>${task.text}</span>
+                               <button onclick="editTask(${index})">Edit</button>
+                               <button onclick="deleteTask(${index})">Delete</button>`;
+                taskList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<%-include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+
+<div class="container">
+    <h1 class="front-dialogue mb-5 mt-5">Meet Our Members</h1>
+    <div class="row">
+      <% const members = [
+        { name: "Alex Doe", role: "Coding", rating: "Master (Codeforces)", img: "path/to/image1.jpg" },
+        { name: "Jordan Lee", role: "Coding", rating: "Expert (Codeforces)", img: "path/to/image2.jpg" },
+        { name: "Sam Taylor", role: "Admin", domain: "Graphic Design", img: "path/to/image3.jpg" },
+        { name: "Casey Brown", role: "Admin", domain: "Operations", img: "path/to/image4.jpg" },
+        { name: "Jamie Fox", role: "Coding", rating: "Candidate Master (Codeforces)", img: "path/to/image5.jpg" },
+        { name: "Drew White", role: "Admin", domain: "Poster Design", img: "path/to/image6.jpg" },
+        { name: "Morgan Gray", role: "Coding", rating: "Specialist (Codeforces)", img: "path/to/image7.jpg" },
+        { name: "Taylor Green", role: "Admin", domain: "Social Media", img: "path/to/image8.jpg" },
+        { name: "Charlie Black", role: "Coding", rating: "Pupil (Codeforces)", img: "path/to/image9.jpg" }
+      ]; %>
+  
+      <% members.forEach(member => { %>
+        <div class="col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 text-center border-light bg-transparent">
+            <!-- Member Image -->
+            <div class="circle">
+              <img src="<%= member.img %>" class="rounded-circle" alt="<%= member.name %>" width="100" height="100">
+            </div>
+            <!-- Member Name -->
+            <h4 class="mt-3"><%= member.name %></h4>
+            <!-- Role and Additional Info -->
+            <p class="mb-1"><strong>Role:</strong> <%= member.role %></p>
+            <% if (member.role === "Coding") { %>
+              <p><strong>Codeforces Rating:</strong> <%= member.rating %></p>
+            <% } else if (member.role === "Admin") { %>
+              <p><strong>Domain:</strong> <%= member.domain %></p>
+            <% } %>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+</div>
+  
+  
+
+
+
+<%- include("partials/footer.ejs") %>

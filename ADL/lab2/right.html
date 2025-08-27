@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Content</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: transparent;
+            padding: 1rem;
+        }
+
+        form {
+            background: cyan;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Enter Name *" required>
+        <input type="email" placeholder="Enter Email Address *" required>
+        <input type="tel" placeholder="+91 Enter Mobile Number *" required>
+        <select>
+            <option>Select State *</option>
+        </select>
+        <select>
+            <option>Select City *</option>
+        </select>
+        <select>
+            <option>Select Programme Level *</option>
+        </select>
+        <select>
+            <option>Select Course *</option>
+        </select>
+        <input type="text" placeholder="Enter captcha">
+        <label>
+            <input type="checkbox"> I agree to receive information
+        </label>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

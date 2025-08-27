@@ -1,0 +1,32 @@
+<%-include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+
+<main class="container my-5">
+    <!-- Page Title -->
+    <div class="text-center mb-5">
+        <h1 class="display-4">KodeWreck Blog</h1>
+        <p class="lead">Dive into articles, tutorials, and experiences from our community. Want to share your insights? Start writing today!</p>
+        <a href="/New-Blog" class="btn btn-outline-light mt-3">Create a Blog Post</a>
+    </div>
+
+    <!-- Featured Post -->
+    
+    <div class="container my-5">
+        <h2 class="mb-4">Latest Blogs</h2>
+        <% if(locals.blogs) {%>
+        <% blogs.forEach(blog => { %>
+            <div class="card mb-4 border-light bg-transparent">
+                <div class="card-body">
+                    <h3 class="card-title"><%= blog.title %></h3>
+                    <p class="card-text"><%- blog.content %></p>
+                </div>
+            </div>
+        <% }) %>
+        <% } %>
+
+    </div>
+
+</main>
+
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,16 @@
+#disableButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#carousel {
+    display: flex;
+    align-items: center;
+}
+img {
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
